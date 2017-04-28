@@ -6,7 +6,7 @@
 .navbar-custom{
     background-color: rgba(255,255,255,0.15);
     border-bottom: solid 2px rgba(0,0,0,0.3);
-    
+
 }
 
 .navbar-custom .navbar-brand p, .navbar-custom .nav li a{
@@ -33,7 +33,7 @@
 }
 
 .background{
-    background: url(../media/glare.jpg) no-repeat center center fixed; 
+    background: url(../media/glare.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -41,7 +41,7 @@
 
 
 .splash{
-    background: url(../media/background1-blur2.png) no-repeat center center fixed; 
+    background: url(../media/background1-blur2.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -131,4 +131,12 @@ input::-webkit-input-placeholder{
     width: 200px;
     background-color: rgba(196, 197, 198,0.5);
     border: solid 2px rgba(196, 197, 140,0.2);
+}
+
+.white-text {
+    color: white;
+}
+
+.search-label {
+    text-align: left;
 }
