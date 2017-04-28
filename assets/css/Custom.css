@@ -4,16 +4,18 @@
 }
 
 .navbar-custom{
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.15);
     border-bottom: solid 2px rgba(0,0,0,0.3);
+    
 }
 
 .navbar-custom .navbar-brand p, .navbar-custom .nav li a{
     color: white;
+    font-family: Raleway;
 }
 
 .navbar-custom .nav li a:hover{
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.3);
 }
 
 .footer-fixed{
@@ -22,17 +24,16 @@
     right: 0;
     bottom: 0;
     text-align: center;
-    background-color: rgba(0,0,0,0.3);
 }
 
 .footer-fixed p{
     padding: 0;
     margin: 0;
-    color: rgba(196, 197,198,0.3);
+    color: rgba(255,255,255,0.1);
 }
 
 .background{
-    background: url(../media/Darker-Background.jpg) no-repeat center center fixed; 
+    background: url(../media/glare.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
