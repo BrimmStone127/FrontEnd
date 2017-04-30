@@ -27,3 +27,5 @@ function getInsertData() {
     data.citation = document.getElementById("insert-citation").value;
     return data;
 }
+
+//TODO add jquery for document ready, ajax and easier selection of elements
