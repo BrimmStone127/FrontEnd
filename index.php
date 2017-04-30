@@ -25,7 +25,7 @@
                 </div>
             </form>
         </section>
-        <script src="assets/js/formFunctions.js" type="text/javascript"></script>
         <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+        <script src="../../assets/js/formFunctions.js"></script>
     </body>
 </html>

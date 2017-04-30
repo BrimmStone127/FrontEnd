@@ -13,7 +13,7 @@
         <?php include '../../assets/includes/splashHeader.php';?>
         <?php include '../../assets/includes/deleteForm.php';?>
         <?php include '../../assets/includes/footer.php';?>
-        <script src="../../assets/js/formFunctions.js"></script>
         <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+        <script src="../../assets/js/formFunctions.js"></script>
     </body>
 </html>
