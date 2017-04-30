@@ -67,7 +67,7 @@
     font-weight: bold;
 }
 
-.loginForm, .searchForm, .insertForm, .updateForm {
+.loginForm, .searchForm, .insertForm, .updateForm, .deleteForm {
     position: absolute;
     top: 55vh;
     left: 50vw;

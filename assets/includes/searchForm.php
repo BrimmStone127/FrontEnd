@@ -3,7 +3,7 @@
         <div class="form-group">
             <input type="search" class="form-control" form="search-form" id="search-input" placeholder="Keyword or Phrase" required />
             <br />
-            <select class="form-control" id="results-select" size="5">
+            <select class="form-control" id="search-results" size="5">
                 <option>Results</option>
             </select>
             <br />

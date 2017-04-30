@@ -1,30 +1,26 @@
 /*jshint esversion:6*/
 function displayResults(arr) {
-    var area = document.getElementById("results-area");
     var results = "";
     for (var item of arr) {
-        results += `${item}\n`;
+        results += `<option>${item}</option>`;
     }
-    area.value = results;
+    $("#search-results").html(results);
 }
 
 function getSearchInput() {
-    var input = document.getElementById("search-input");
-    var arr = input.value.split(" ");
-    displayResults(arr);
+    displayResults($("#search-input").val().split(" "));
 }
 
 function insertEntry() {
-    var insertData = getInsertData();
-    console.log(insertData);
+    console.log(getInsertData());
 }
 
 function getInsertData() {
     var data = {};
-    data.title = document.getElementById("insert-title").value;
-    data.keywords = document.getElementById("insert-keywords").value.split(",");
-    data.abstract = document.getElementById("insert-abstract").value;
-    data.citation = document.getElementById("insert-citation").value;
+    data.title = $("#insert-title").val();
+    data.keywords = $("#insert-keywords").val().split(",");
+    data.abstract = $("#insert-abstract").val();
+    data.citation = $("#insert-citation").val();
     return data;
 }
 

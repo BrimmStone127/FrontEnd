@@ -9,7 +9,7 @@
             <br />
             <textarea class="form-control" id="insert-citation" form="insert-form" placeholder="Citation"></textarea>
             <br />
-            <button type="submit" class="btn btn-primary" onclick="insertEntry();" form="insert-form">Insert Entry</button>
+            <button type="button" class="btn btn-primary" onclick="insertEntry();" form="insert-form">Insert Entry</button>
         </div>
     </form>
 </main>

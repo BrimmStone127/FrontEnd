@@ -14,5 +14,6 @@
         <?php include '../../assets/includes/searchForm.php';?>
         <?php include '../../assets/includes/footer.php';?>
         <script src="../../assets/js/formFunctions.js"></script>
+        <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
     </body>
 </html>
