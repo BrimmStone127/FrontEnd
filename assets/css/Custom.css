@@ -67,7 +67,7 @@
     font-weight: bold;
 }
 
-.loginForm{
+.loginForm, .searchForm, .insertForm {
     position: absolute;
     top: 55vh;
     left: 50vw;
@@ -103,13 +103,13 @@ input::-webkit-input-placeholder{
 
 
 
-.loginForm input{
+.loginForm input {
     margin-top: 10px;
     border: none;
     border-radius: 8px;
 }
 
-.loginForm #u-input{
+#login-form #u-input1, #login-form #u-input2 {
     padding: 8px;
     width: 260px;
     color: white;
@@ -117,21 +117,22 @@ input::-webkit-input-placeholder{
     border: solid 2px rgba(196, 197,198,0.35);
 }
 
-.loginForm #s-input1{
-    padding: 6px;
-    margin-top: 20px;
+#s-input1 {
     width: 100px;
+}
+
+#s-input2{
+    width: 200px;
+}
+
+#s-input1, #s-input2{
+    padding: 6px;
+    margin-top: 15px;
     background-color: rgba(196, 197, 198,0.5);
     border: solid 2px rgba(196, 197, 140,0.2);
 }
 
-.loginForm #s-input2{
-    padding: 6px;
-    margin-top: 15px;
-    width: 200px;
-    background-color: rgba(196, 197, 198,0.5);
-    border: solid 2px rgba(196, 197, 140,0.2);
-}
+
 
 .white-text {
     color: white;

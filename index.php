@@ -8,28 +8,22 @@
         <style>@import url('https://fonts.googleapis.com/css?family=Muli|Raleway|Roboto');</style>
         <title>Easy B+ Login</title>
     </head>
-
     <body class="splash">
-
         <div class="splashHeader">
             <h2>Welcome To Easy B+</h2>
         </div>
-
         <section class="loginSection">
-            <form class="loginForm" name="LogMeIn" onsubmit="" method="post">
+            <form class="loginForm" id="login-form" name="LogMeIn" onsubmit="" method="post">
                 <div class="form-group">
-                    <input id="u-input" type="text" name="user" placeholder="Username" required />
-                    <br>
-                    <input id="u-input" type="text" name="pass" placeholder="Password" required />
-                    <br>
-                    <input id="s-input1" class="btn btn-primary" type="submit"  name="auth"  value="Sign In"  />
-                    <br>
-                    <button id="s-input2" class="btn btn-secondary" type="submit"  name="auth"  value="Continue As Guest">Continue As Guest</button>
+                    <input id="u-input1" type="text" name="user" form="login-form" placeholder="Username" required />
+                    <br />
+                    <input id="u-input2" type="text" name="pass" form="login-form" placeholder="Password" required />
+                    <br />
+                    <button id="s-input1" class="btn btn-primary" type="submit"  name="auth" form="login-form">Sign In</button>
+                    <br />
+                    <a href="/frontend/access/faculty/fsearch.php"><button id="s-input2" class="btn btn-secondary white-text" type="button"  name="auth">Continue As Guest</button></a>
                 </div>
             </form>
         </section>
-
-
     </body>
-
 </html>

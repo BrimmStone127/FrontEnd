@@ -6,12 +6,12 @@
         <link rel="stylesheet" property='stylesheet' type="text/css" href="../../assets/css/bootstrap.min.css"/>
         <link rel="stylesheet" property='stylesheet' type="text/css" href="../../assets/css/Custom.css"/>
         <style>@import url('https://fonts.googleapis.com/css?family=Muli|Raleway|Roboto');</style>
-        <title>Easy B+ Search Page</title>
+        <title>Easy B+ Insert Page</title>
     </head>
     <body class="background">
         <?php include '../../assets/includes/facultyNav.php';?>
         <?php include '../../assets/includes/splashHeader.php';?>
-        <?php include '../../assets/includes/searchForm.php';?>
+        <?php include '../../assets/includes/insertForm.php';?>
         <?php include '../../assets/includes/footer.php';?>
         <script src="../../assets/js/formFunctions.js"></script>
     </body>
