@@ -26,6 +26,6 @@
             </form>
         </section>
         <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-        <script src="assets/js/formFunctions.js"></script>
+        <script src="assets/js/loginTools.js"></script>
     </body>
 </html>
