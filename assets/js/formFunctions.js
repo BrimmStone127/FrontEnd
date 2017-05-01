@@ -2,6 +2,25 @@
 
 $(document).ready(function() {
     loadExistingDocuments();
+
+    //example usage of myXHR function
+    // myXHR('get', {'path':'/Entity/1'}).done(function(json){
+    //   console.log(json);
+    // });
+
+    $.ajax({
+        url: 'http://rxc4044.student.rit.edu:49831/api/SearchTerm',
+        dataType: 'json',
+        async: true,
+        cache: false,
+        success: function(data) {
+            console.log(data);
+        },
+        error: function() {
+            console.log("error");
+        },
+        type: 'GET'
+    });
 });
 
 /*************START SEARCH FUNCTIONS*****************/
@@ -105,34 +124,3 @@ function deleteDocument() {
     console.log(docName);
 }
 /*************END DELETE FUNCTIONS*****************/
-
-//example usage of myXHR function
-// myXHR('get', {'path':'/mypath/'}).done(function(json){
-//   console.log(json);
-// });
-
-/**
- * AJAX Utility
- * @param  {String} t 'get' or 'put'
- * @param  {String} d {"path":"/undergrad/"}
- */
-function myXHR(t,d) {
-  return $.ajax({
-    type: t,
-    cache:false,
-    async:true,
-    dataType:'json',
-    url:'our url',
-    data:d,
-    beforeSend:function(){
-      //happens before sending...
-
-    }
-  }).always(function() {
-    //happens no matter what...
-
-  }).fail(function() {
-    //handle failures...
-    console.log("we failed");
-  });
-}
