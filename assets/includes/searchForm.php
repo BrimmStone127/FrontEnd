@@ -3,7 +3,7 @@
         <div class="form-group">
             <input type="search" class="form-control" form="search-form" id="search-input" placeholder="Keyword or Phrase" required />
             <br />
-            <button type="button" class="btn btn-primary" onclick="searchDocuments();" form="search-form">Search for Documents</button>
+            <button type="button" class="btn btn-primary" onclick="findMatches();" form="search-form">Search for Documents</button>
             <br />
         </div>
         <div class="form-group">

@@ -1,4 +1,5 @@
 /*jshint esversion:6*/
+/*jshint loopfunc: true */
 
 /**
  * Test function that parses comma separated keywords
@@ -13,29 +14,62 @@ function displayResults(docs) {
     $("#search-results").html(results);
 }
 
-function searchDocuments() {
-    var arr = $("#search-input").val().split(" ");
+function searchDocuments(idArr) {
     var documents = [];
-    $.each(arr, function(index,value) {
-        $.ajax({
-            type: 'GET',
-            cache: false,
-            async: true,
-            dataType: 'json',
-            url: '../../proxy.php',
-            data: {
-                path: '/Entity/'
-            },
-            success: function(data) {
-                console.log(data);
-            },
-            fail: function() {
-                console.log("we failed");
+    getEntities().done(function(entities) {
+        $.each(entities, function(ind, entity) {
+            if (idArr.indexOf(entity.Id) >= 0) {
+                documents.push(entity.Title);
             }
         });
+        displayResults(documents);
     });
-    //displayResults(documents);
 }
+
+function getEntities() {
+    return $.ajax({
+        type: 'GET',
+        cache: false,
+        async: true,
+        dataType: 'json',
+        url: '../../proxy.php',
+        data: {
+            path: '/Entity/'
+        }
+    });
+}
+
+function findMatches() {
+    var arr = $("#search-input").val().split(" ");
+    var ids = [];
+    getKeywords().done(function(jsonArray) {
+        $.each(jsonArray, function(index, jsonObj) {
+            for (var input of arr) {
+                if (jsonObj.Keyword.indexOf(input) >= 0) {
+                    if (ids.indexOf(jsonObj.Id) == -1) {
+                        ids.push(jsonObj.Id);
+                    }
+                }
+            }
+        });
+        searchDocuments(ids);
+    });
+}
+
+function getKeywords() {
+    return $.ajax({
+        type: 'GET',
+        cache: false,
+        async: true,
+        dataType: 'json',
+        url: '../../proxy.php',
+        data: {
+            path: '/SearchTerm/'
+        }
+    });
+}
+
+
 
 /**
  * Logs the selected value of the search results
