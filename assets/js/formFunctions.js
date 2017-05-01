@@ -3,23 +3,21 @@
 $(document).ready(function() {
     loadExistingDocuments();
 
-    //example usage of myXHR function
-    // myXHR('get', {'path':'/Entity/1'}).done(function(json){
-    //   console.log(json);
-    // });
-
     $.ajax({
-        url: 'http://rxc4044.student.rit.edu:49831/api/SearchTerm',
-        dataType: 'json',
-        async: true,
+        type: 'GET',
         cache: false,
+        async: true,
+        dataType: 'json',
+        url: 'proxy.php',
+        data: {
+            path: '/Entity'
+        },
         success: function(data) {
             console.log(data);
         },
-        error: function() {
-            console.log("error");
-        },
-        type: 'GET'
+        fail: function() {
+            console.log("we failed");
+        }
     });
 });
 
@@ -32,7 +30,7 @@ $(document).ready(function() {
 function displayResults() {
     var arr = $("#search-input").val().split(" ");
     var results = "";
-    $.each(arr, function( index, value) {
+    $.each(arr, function(index, value) {
         results += `<option>${value}</option>`;
     });
     $("#search-results").html(results);
