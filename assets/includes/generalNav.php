@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right" >
                 <li><a href='../../access/public/psearch.php'>Search</a></li>
-                <li><a href='../../index.php'>Log In</a></li>     
+                <li><a href='../../index.php'>Log Out</a></li>     
             </ul>
         </div>
 
