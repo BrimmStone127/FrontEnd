@@ -11,7 +11,7 @@
 
     <body class="background">
         <?php include '../../assets/includes/generalNav.php';?>
-        <?php include '../../assets/includes/splashHeader.php';?>
+        <?php include '../../assets/includes/searchHeader.php';?>
         <?php include '../../assets/includes/searchForm.php';?>
         <?php include '../../assets/includes/footer.php';?>
     </body>
