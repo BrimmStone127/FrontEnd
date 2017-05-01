@@ -2,9 +2,11 @@
 /*jshint loopfunc: true */
 
 /**
- * Test function that parses comma separated keywords
- * from the input and displays them in the select elements
+ * Creates an option element for each Title
+ * passed in through the docs array. Adds
+ * these options to the select element "search-results"
  * @method displayResults
+ * @param {Array}   docs    A collection of titles to be displayed
  */
 function displayResults(docs) {
     var results = "";
@@ -14,6 +16,13 @@ function displayResults(docs) {
     $("#search-results").html(results);
 }
 
+/**
+ * Loops through each entity and if the current
+ * entity's id matches a value in idArr, then the
+ * title is added to documents and passed to display.
+ * @method searchDocuments
+ * @param  {Array}  idArr   An array of ids
+ */
 function searchDocuments(idArr) {
     var documents = [];
     getEntities().done(function(entities) {
@@ -26,6 +35,11 @@ function searchDocuments(idArr) {
     });
 }
 
+/**
+ * Makes an ajax call for all entities
+ * @method getEntities
+ * @return {Object}    Ajax request object
+ */
 function getEntities() {
     return $.ajax({
         type: 'GET',
@@ -39,6 +53,12 @@ function getEntities() {
     });
 }
 
+/**
+ * Finds matches between user input keywords
+ * and keywords from the api, and stores the ids
+ * and passes the ids along to searchDocuments
+ * @method findMatches
+ */
 function findMatches() {
     var arr = $("#search-input").val().split(" ");
     var ids = [];
@@ -56,6 +76,11 @@ function findMatches() {
     });
 }
 
+/**
+ * Makes an ajax call for all search terms
+ * @method getKeywords
+ * @return {Object}    An ajax request object
+ */
 function getKeywords() {
     return $.ajax({
         type: 'GET',
