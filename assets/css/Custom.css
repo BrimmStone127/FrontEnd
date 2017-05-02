@@ -45,7 +45,7 @@
 
 
 .splash{
-    background: url(../media/background1-blur2.png) no-repeat center center fixed;
+    background: url(../media/glare.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -121,21 +121,21 @@ input::-webkit-input-placeholder{
     border: 2px solid rgba(196, 197,198,0.35);
 }
 
-#s-input1 {
+.s-input1 {
     width: 100px;
 }
 
-#s-input2{
+.s-input2{
     width: 200px;
 }
 
-#s-input1, #s-input2{
+.s-input1, .s-input2{
     padding: 6px;
     margin-top: 15px;
-    background-color: rgba(196, 197, 198,0.5);
-    border: 2px solid rgba(196, 197, 140,0.2);
 }
+
 
 .white-text {
     color: white;
 }
+
