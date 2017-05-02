@@ -10,7 +10,7 @@
 
         </div>
 
-        <div class="collapse navbar-collapse">
+        <div class="">
             <ul class="nav navbar-nav navbar-right" >
                 <li><a href='/frontend/access/faculty/fsearch.php'>Search</a></li>
                 <li><a href='/frontend/access/faculty/finsert.php'>Insert</a></li>

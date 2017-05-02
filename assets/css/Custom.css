@@ -1,27 +1,33 @@
+/* Override of navbar hover effects*/
 .overrideNav #lHeader:hover{
     text-decoration: none;
     color: inherit;
 }
 
+/* Override of bootstrap navbar which changes colors*/
 .navbar-custom{
     background-color: rgba(255,255,255,0.15);
     border-bottom: 2px solid rgba(0,0,0,0.3);
 
 }
 
+/* Overide of nav bar font and text color*/
 .navbar-custom .navbar-brand p, .navbar-custom .nav li a{
     color: white;
     font-family: Raleway;
 }
 
+/* Navbar link hover styling*/
 .navbar-custom .nav li a:hover{
     background-color: rgba(0,0,0,0.3);
 }
 
+/* Override Navbar brand link hover styling (top-left)*/
 .navbar-custom .navbar-brand a:hover{
     text-decoration: none;
 }
 
+/* Footer positioning*/
 .footer-fixed{
     position: absolute;
     left: 0;
@@ -30,12 +36,14 @@
     text-align: center;
 }
 
+/* Footer styling*/
 .footer-fixed p{
     padding: 0;
     margin: 0;
     color: rgba(255,255,255,0.1);
 }
 
+/* Background of each page once logged in*/
 .background{
     background: url(../media/glare.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -43,7 +51,7 @@
     background-size: cover;
 }
 
-
+/* Background of login page with positioning*/
 .splash{
     background: url(../media/glare.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -55,6 +63,7 @@
     font-family: Raleway;
 }
 
+/* Header styling and positioning for each page*/
 .splashHeader{
     position: absolute;
     top: 30vh;
@@ -64,13 +73,16 @@
     width: 400px;
     margin: -100px 0px 0px -200px;
     color: white;
+    font-family: Raleway;
 }
 
+/* Background of each page once logged in*/
 .splashHeader h2{
     font-size: 350%;
     font-weight: bold;
 }
 
+/* Styling and positioning of form elements*/
 .loginForm, .searchForm, .insertForm, .updateForm, .deleteForm {
     position: absolute;
     top: 55vh;
@@ -84,10 +96,12 @@
 
 
 /* Browser Tweaks*/
+/* Chrome form border fix*/
 input:focus{
     outline: none;
 }
 
+/* Chrome autofill fix on login page*/
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -96,23 +110,25 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color: white !important;
 }
 
+/* Form placehoder color fix for all browsers except chrome*/
 .loginForm::-moz-placeholder, .loginForm:-ms-input-placeholder, .loginForm:-moz-placeholder, .loginForm::placeholder{
     color: white;
 }
-
+/* Chrome placeholder color fix*/
 input::-webkit-input-placeholder{
     color: white;
 }
 /* Browser Tweaks*/
 
 
-
+/* Login form input styling*/
 .loginForm input {
     margin-top: 10px;
     border: none;
     border-radius: 8px;
 }
 
+/* Login form input styling*/
 #login-form #u-input1, #login-form #u-input2 {
     padding: 8px;
     width: 260px;
@@ -121,20 +137,23 @@ input::-webkit-input-placeholder{
     border: 2px solid rgba(196, 197,198,0.35);
 }
 
+/* Login form log in button*/
 .s-input1 {
     width: 100px;
 }
 
+/* Login form cotinue as guest button*/
 .s-input2{
     width: 200px;
 }
 
+/* Login form button styling*/
 .s-input1, .s-input2{
     padding: 6px;
     margin-top: 15px;
 }
 
-
+/* white text formatter*/
 .white-text {
     color: white;
 }
