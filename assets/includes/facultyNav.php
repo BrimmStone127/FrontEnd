@@ -5,18 +5,18 @@
         <div class = "navbar-header">
 
             <div class="navbar-brand">
-                    <a href="/frontend/access/faculty/fsearch.php"><p>Easy B+</p></a>
+                    <a href="../../access/faculty/fsearch.php"><p>Easy B+</p></a>
             </div>
 
         </div>
 
         <div class="">
             <ul class="nav navbar-nav navbar-right" >
-                <li><a href='/frontend/access/faculty/fsearch.php'>Search</a></li>
-                <li><a href='/frontend/access/faculty/finsert.php'>Insert</a></li>
-                <li><a href='/frontend/access/faculty/fupdate.php'>Update</a></li>
-                <li><a href='/frontend/access/faculty/fdelete.php'>Delete</a></li>
-                <li><a href='/frontend/index.php'>Log Out</a></li>
+                <li><a href='../../access/faculty/fsearch.php'>Search</a></li>
+                <li><a href='../../access/faculty/finsert.php'>Insert</a></li>
+                <li><a href='../../access/faculty/fupdate.php'>Update</a></li>
+                <li><a href='../../access/faculty/fdelete.php'>Delete</a></li>
+                <li><a href='../../index.php'>Log Out</a></li>
             </ul>
         </div>
 
