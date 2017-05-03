@@ -158,3 +158,17 @@ input::-webkit-input-placeholder{
     color: white;
 }
 
+.backArrow{
+    position: absolute;
+    top: 18vh;
+    left: 5vw;
+    font-size: 30px;
+}
+
+.backArrow p a span{
+color: white;
+}
+
+.backArrow p a:hover span{
+color: black;
+}

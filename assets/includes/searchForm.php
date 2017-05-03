@@ -11,7 +11,7 @@
                 <option>Results</option>
             </select>
             <br />
-            <button type="button" class="btn btn-primary" onclick="lookupResult();">Look-up Result</button>
+            <a href="../../access/result/resullt.php"><button type="button" class="btn btn-primary" onclick="lookupResult();">Look-up Result</button></a>
         </div>
     </form>
 </main>
