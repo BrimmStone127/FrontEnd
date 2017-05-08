@@ -19,7 +19,7 @@
                     <br />
                     <input id="u-input2" type="text" name="pass" form="login-form" placeholder="Password" required />
                     <br />
-                    <button class="s-input1 btn btn-primary white-text" type="submit"  name="auth" form="login-form">Sign In</button>
+                    <button class="s-input1 btn btn-primary white-text" type="button" id="auth" name="auth" form="login-form">Sign In</button>
                     <br />
                     <a href="access/faculty/fsearch.php"><button class="s-input2 btn btn-primary white-text" type="button"  name="auth">Continue As Guest</button></a>
                 </div>
