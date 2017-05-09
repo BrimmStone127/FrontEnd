@@ -8,10 +8,15 @@
  * @method displayResults
  * @param {Array}   docs    A collection of titles to be displayed
  */
+
+$(document).ready(function() {
+    loadSearch();
+});
+
 function displayResults(docs) {
     var results = "";
     $.each(docs, function(index, value) {
-        results += `<option>${value}</option>`;
+        results += `<option id=${value.Id}>${value.Title}</option>`;
     });
     $("#search-results").html(results);
 }
@@ -28,7 +33,7 @@ function searchDocuments(idArr) {
     getEntities().done(function(entities) {
         $.each(entities, function(ind, entity) {
             if (idArr.indexOf(entity.Id) >= 0) {
-                documents.push(entity.Title);
+                documents.push(entity);
             }
         });
         displayResults(documents);
@@ -97,14 +102,70 @@ function getKeywords() {
 
 
 /**
- * Logs the selected value of the search results
+ * Converts to results page and looks up selection
  * @method lookupResult
  */
 function lookupResult() {
-    var value = $("#search-results").val();
-    if (value !== null) {
-        console.log(value);
+    var value = $("#search-results option:selected").attr("id");
+    if (value !== undefined) {
+        loadResult();
+        displayResultInfo(value);
     } else {
         alert("Please select a document to look-up");
     }
+}
+
+
+function loadResult() {
+    $('#switchMe').load("../../assets/includes/resultForm.php");
+}
+
+function getPaperInfo(id) {
+    return $.ajax({
+        type: 'GET',
+        cache: false,
+        async: true,
+        dataType: 'json',
+        url: '../../proxy.php',
+        data: {
+            path: `/Entity/${id}`
+        }
+    });
+}
+
+function getPaperKeywords(id) {
+    return $.ajax({
+        type: 'GET',
+        cache: false,
+        async: true,
+        dataType: 'json',
+        url: '../../proxy.php',
+        data: {
+            path: `/SearchTerm/${id}`
+        }
+    });
+}
+
+function displayResultInfo(value) {
+    var keywords = "";
+    getPaperKeywords(value).done(function(kwords) {
+        $.each(kwords, function(ind, val) {
+            if(ind === 0) {
+                keywords += `${val.Keyword}`;
+            }
+            keywords += `, ${val.Keyword}`;
+        });
+        getPaperInfo(value).done(function(entity) {
+            $("#insert-title").val(entity.Title);
+            $("#insert-keywords").val(keywords);
+            $("#insert-abstract").val(entity.Abstract);
+            $("#insert-citation").val(entity.Citation);
+        });
+    });
+
+
+}
+
+function loadSearch() {
+    $('#switchMe').load("../../assets/includes/searchForm.php");
 }

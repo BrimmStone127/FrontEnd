@@ -10,7 +10,6 @@
     </head>
     <body class="background">
         <?php include '../../assets/includes/facultyNav.php';?>
-        <?php include '../../assets/includes/insertHeader.php';?>
         <?php include '../../assets/includes/insertForm.php';?>
         <?php include '../../assets/includes/footer.php';?>
         <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>

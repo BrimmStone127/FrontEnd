@@ -6,14 +6,13 @@
         <link rel="stylesheet" property='stylesheet' type="text/css" href="../../assets/css/bootstrap.min.css"/>
         <link rel="stylesheet" property='stylesheet' type="text/css" href="../../assets/css/Custom.css"/>
         <style>@import url('https://fonts.googleapis.com/css?family=Muli|Raleway|Roboto');</style>
-        <title>Easy B+ Search Page</title>
+        <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+        <script src="../../assets/js/searchTools.js"></script>
     </head>
     <body class="background">
         <?php include '../../assets/includes/facultyNav.php';?>
-        <?php include '../../assets/includes/searchHeader.php';?>
-        <?php include '../../assets/includes/searchForm.php';?>
+        <main id="switchMe">
+        </main>
         <?php include '../../assets/includes/footer.php';?>
-        <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-        <script src="../../assets/js/searchTools.js"></script>
     </body>
 </html>

@@ -20,3 +20,17 @@ function deleteDocument() {
     var docName = $("#existing-documents").val();
     console.log(docName);
 }
+
+function deletePaper(id) {
+    $.ajax({
+        type: 'DELETE',
+        cache: false,
+        async: true,
+        dataType: 'json',
+        url: '../../proxy.php',
+        data: {
+            path: `/Entity/${id}`
+        }
+    });
+    return 'ricky said meow';
+}
