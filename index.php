@@ -21,7 +21,7 @@
                     <br />
                     <button class="s-input1 btn btn-primary white-text" type="button" id="auth" name="auth" form="login-form">Sign In</button>
                     <br />
-                    <a href="access/faculty/fsearch.php"><button class="s-input2 btn btn-primary white-text" type="button"  name="auth">Continue As Guest</button></a>
+                    <a href="access/general/psearch.php"><button class="s-input2 btn btn-primary white-text" type="button"  name="auth">Continue As Guest</button></a>
                 </div>
             </form>
         </section>
