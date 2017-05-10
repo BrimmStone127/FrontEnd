@@ -8,7 +8,7 @@ This include is a form that will be used to insert entries into the database
     <div class="form-group">
         <input type="text" class="form-control" form="insert-form" id="insert-title" placeholder="Title" required />
         <br />
-        <textarea class="form-control" id="insert-keywords" form="insert-form" placeholder="Associated Keywords and Search Terms" required ></textarea>
+        <textarea class="form-control" id="insert-keywords" form="insert-form" placeholder="Comma Separated Keywords" required ></textarea>
         <br />
         <textarea class="form-control" id="insert-abstract" form="insert-form" placeholder="Abstract"></textarea>
         <br />
