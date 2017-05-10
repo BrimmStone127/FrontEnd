@@ -10,7 +10,6 @@
     </div>
     <div class="form-group">
         <select class="form-control" id="search-results" size="5">
-            <option>Results</option>
         </select>
         <br />
         <button type="button" class="btn btn-primary" onclick="lookupResult();">Look-up Result</button>

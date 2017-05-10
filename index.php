@@ -17,7 +17,7 @@
                 <div class="form-group">
                     <input id="u-input1" type="text" name="user" form="login-form" placeholder="Username" required />
                     <br />
-                    <input id="u-input2" type="text" name="pass" form="login-form" placeholder="Password" required />
+                    <input id="u-input2" type="password" name="pass" form="login-form" placeholder="Password" required />
                     <br />
                     <button class="s-input1 btn btn-primary white-text" type="button" id="auth" name="auth" form="login-form">Sign In</button>
                     <br />

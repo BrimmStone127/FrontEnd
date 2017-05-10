@@ -13,3 +13,16 @@ function insertEntry() {
     data.citation = $("#insert-citation").val();
     console.log(data);
 }
+
+function setPaperInfo(id) {
+    return $.ajax({
+        type: 'GET',
+        cache: false,
+        async: true,
+        dataType: 'json',
+        url: '../../proxy.php',
+        data: {
+            path: `/Entity/${id}`
+        }
+    });
+}
