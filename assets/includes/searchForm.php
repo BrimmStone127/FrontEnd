@@ -12,7 +12,7 @@ This include is a form that is used to to search an entry in the database
         <br />
     </div>
     <div class="form-group">
-        <select class="form-control" id="search-results" size="5">
+        <select class="form-control" id="search-results" size="10">
         </select>
         <br />
         <button type="button" class="btn btn-primary" onclick="lookupResult();">Look-up Result</button>

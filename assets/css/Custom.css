@@ -39,17 +39,18 @@ html {
   height: 40px;
 }
 
-.footer-style{
-    text-align: center;
-    background-color: rgba(0,0,0,0.3);
-}
-
 /* Footer styling*/
 .footer-style p{
     padding: 0;
     margin: 0;
     color: rgba(255,255,255,0.1);
 }
+
+.footer-style{
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+}
+/* Footer styling*/
 
 /* Background of each page once logged in*/
 .background{
@@ -94,6 +95,7 @@ html {
     margin: 0 auto;
 }
 
+/* Styling for the updateForm */
 .updateForm{
    text-align: center;
     width: 700px;
@@ -101,11 +103,13 @@ html {
     margin: 0 auto;
 }
 
+/* Styling for the left updateForm */
 .leftUpdate{
     float: left;
     width: 300px;
 }
 
+/* Styling for the right updateForm */
 .rightUpdate{
     float: right;
     width: 300px;
@@ -126,7 +130,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: white !important;
+    -webkit-text-fill-color: inherit !important;
 }
 
 /* Form placehoder color fix for all browsers except chrome*/
