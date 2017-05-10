@@ -76,7 +76,7 @@ html {
 .splashHeader{
     display: block;
     text-align: center;
-    margin: 100px 20% 50px 20%;
+    margin: 10% 20% 50px 20%;
     color: white;
     font-family: Raleway;
 }
@@ -87,11 +87,28 @@ html {
 }
 
 /* Styling and positioning of form elements*/
-.loginForm, .searchForm, .insertForm, .updateForm, .deleteForm {
+.loginForm, .searchForm, .insertForm, .deleteForm {
     text-align: center;
-    width: 550px;
+    width: 650px;
     height: auto;
     margin: 0 auto;
+}
+
+.updateForm{
+   text-align: center;
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.leftUpdate{
+    float: left;
+    width: 300px;
+}
+
+.rightUpdate{
+    float: right;
+    width: 300px;
 }
 
 
