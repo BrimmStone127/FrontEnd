@@ -120,6 +120,12 @@ function loadResult() {
     $('#switchMe').load("../../assets/includes/resultForm.php");
 }
 
+/**
+ * Returns a jQuery ajax request
+ * @method getPaperInfo
+ * @param  {Number}     id the id associated with a paper
+ * @return {Object}        a jQuery ajax request object
+ */
 function getPaperInfo(id) {
     return $.ajax({
         type: 'GET',

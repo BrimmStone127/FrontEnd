@@ -7,7 +7,11 @@ define ('HOSTNAME', 'localhost:49831/api');
 
 //access the api - remember we have to send in a leading '/'
 //so the path variable could be '/about/'
-$url=HOSTNAME.$_GET['path'];
+$url=HOSTNAME.$_POST['path'];
+
+$fields = array(
+
+);
 
 //set up curl (Client Uniform Resource Locator)
 	//  Initiate curl
