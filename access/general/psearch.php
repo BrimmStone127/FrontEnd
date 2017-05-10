@@ -1,3 +1,6 @@
+<!--
+This is the update page that is used for faculty members only
+-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,10 +14,12 @@
     </head>
 
     <body class="background">
-        <?php include '../../assets/includes/generalNav.php';?>
+        <?php // This is the include for a general user navigation bar
+        include '../../assets/includes/generalNav.php';?>
         <main id="switchMe">
         </main>
-        <?php include '../../assets/includes/footer.php';?>
+        <?php // This is the include for the footer
+        include '../../assets/includes/footer.php';?>
     </body>
 
 </html>
