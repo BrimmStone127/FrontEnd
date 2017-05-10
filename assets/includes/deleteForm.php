@@ -1,3 +1,6 @@
+<!--
+This include is a form that is used to delete entries form the database
+-->
 <div class="splashHeader">
     <h2>Delete A Paper</h2>
 </div>

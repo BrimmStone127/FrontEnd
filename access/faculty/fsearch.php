@@ -1,3 +1,6 @@
+<!--
+This is the search page that is used for faculty members only
+-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,9 +13,11 @@
         <script src="../../assets/js/searchTools.js"></script>
     </head>
     <body class="background">
-        <?php include '../../assets/includes/facultyNav.php';?>
+        <?php // This is the include for a faculty navigation bar
+        include '../../assets/includes/facultyNav.php';?>
         <main id="switchMe">
         </main>
-        <?php include '../../assets/includes/footer.php';?>
+        <?php // This is the include for the footer
+        include '../../assets/includes/footer.php';?>
     </body>
 </html>

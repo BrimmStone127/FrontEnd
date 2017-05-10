@@ -1,3 +1,6 @@
+<!--
+This include is a form that will be used to insert entries into the database
+-->
 <div class="splashHeader">
     <h2>Insert A Paper</h2>
 </div>

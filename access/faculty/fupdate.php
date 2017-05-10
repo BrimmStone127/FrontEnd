@@ -1,3 +1,6 @@
+<!--
+This is the update page that is used for faculty members only
+-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,9 +12,12 @@
         <title>Easy B+ Update Page</title>
     </head>
     <body class="background">
-        <?php include '../../assets/includes/facultyNav.php';?>
-        <?php include '../../assets/includes/updateForm.php';?>
-        <?php include '../../assets/includes/footer.php';?>
+        <?php // This is the include for a faculty navigation bar
+        include '../../assets/includes/facultyNav.php';?>
+        <?php // This is the include for the update paper form
+        include '../../assets/includes/updateForm.php';?>
+        <?php // This is the include for the footer
+        include '../../assets/includes/footer.php';?>
         <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
         <script src="../../assets/js/updateTools.js"></script>
     </body>

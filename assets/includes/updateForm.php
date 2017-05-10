@@ -1,4 +1,10 @@
+<!--
+This include is a form that is used to update the the entries in the database
+-->
 <main class="update-form-container">
+    <div class="splashHeader">
+        <h2>Update A Paper</h2>
+    </div>
     <form class="updateForm" id="update-form">
         <div class="form-group">
             <?php include 'existingDocuments.php';?>

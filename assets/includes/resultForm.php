@@ -1,3 +1,6 @@
+<!--
+This include is the form that will hold the results when a search term is selected
+-->
 <div class="backArrow container">
     <p><a onclick="loadSearch();"><span class="glyphicon glyphicon-chevron-left"></span></a></p>
 </div>

@@ -1,3 +1,6 @@
+<!--
+This include is a form that is used to to search an entry in the database
+-->
 <div class="splashHeader">
     <h2>Search For A Paper</h2>
 </div>

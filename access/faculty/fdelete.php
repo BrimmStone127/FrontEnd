@@ -1,3 +1,6 @@
+<!--
+This is the delete page that is used for faculty members only
+-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,9 +12,12 @@
         <title>Easy B+ Delete Page</title>
     </head>
     <body class="background">
-        <?php include '../../assets/includes/facultyNav.php';?>
-        <?php include '../../assets/includes/deleteForm.php';?>
-        <?php include '../../assets/includes/footer.php';?>
+        <?php // This is the include for a faculty navigation bar
+        include '../../assets/includes/facultyNav.php';?>
+        <?php // This is the include for the delete paper form
+        include '../../assets/includes/deleteForm.php';?>
+        <?php // This is the include for the footer
+        include '../../assets/includes/footer.php';?>
         <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
         <script src="../../assets/js/deleteTools.js"></script>
     </body>

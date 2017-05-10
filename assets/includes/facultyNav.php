@@ -1,3 +1,6 @@
+<!--
+This include is the navigation bar used for faculty user
+-->
 <nav class="navbar navbar-custom navbar-fixed-top overrideNav" role="navigation">
 
     <div class="container">
